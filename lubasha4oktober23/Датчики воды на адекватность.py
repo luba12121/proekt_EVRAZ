@@ -11,6 +11,9 @@ cex1 = {
 }
 json.dump(cex1, file, ensure_ascii=False)
 file.close()
+def get_date(message):
+    print(message.text)
+    poldata = str(message.text)
 #Первый датчик ЦЕХ 1
 file = open('datchik1.1.json', 'w+', encoding='utf-8')
 today = date.today()
@@ -77,6 +80,12 @@ datchik1 = [{
     "date": str(week7),
     "znachenie": 42
 },
+{
+    "cex": "цех химического улавливания",
+    "datchik": 1.1,
+    "date": str(poldata),
+    "znachenie": 77
+}
 ]
 json.dump(datchik1, file, ensure_ascii=False)
 file.close()
@@ -226,6 +235,10 @@ from telebot import types
 
 token = '6644060607:AAGkixM7ItktRc2ZJLjOhXZsuOKnuji6vlc'
 
+ # def get_date(message):
+ #     print(message.text)
+ #     poldata = str(message.text)
+
 bot = telebot.TeleBot(token)
 @bot.message_handler(content_types=['text'])
 def get_message(message):
@@ -362,8 +375,9 @@ def callback_worker(call):
     elif call.data == 'выбрать свою дату':
         textpol = '*Напишите дату за которую нужно узнать показания*'
         bot.send_message(call.from_user.id, text=textpol, parse_mode='Markdown')
-        znach = []
-
+        bot.register_next_step_handler(call.message, get_date)
+        # znach = []
+        # znach.append(messages.to_dict())
 
     if call.data == 'Датчик 2.1':
         file = open('datchik2.1.json', 'r', encoding='utf-8')
