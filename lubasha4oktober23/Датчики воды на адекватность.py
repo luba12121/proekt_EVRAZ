@@ -11,9 +11,13 @@ cex1 = {
 }
 json.dump(cex1, file, ensure_ascii=False)
 file.close()
+
+ddd=''
+
 def get_date(message):
+    global ddd
     print(message.text)
-    poldata = str(message.text)
+    ddd = str(message.text)
 #Первый датчик ЦЕХ 1
 file = open('datchik1.1.json', 'w+', encoding='utf-8')
 today = date.today()
@@ -83,7 +87,7 @@ datchik1 = [{
 {
     "cex": "цех химического улавливания",
     "datchik": 1.1,
-    "date": str(poldata),
+    "date": str(ddd),
     "znachenie": 77
 }
 ]
