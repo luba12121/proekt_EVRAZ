@@ -18,6 +18,27 @@ def get_date(message):
     global ddd
     print(message.text)
     ddd = str(message.text)
+    file = open('datchik1.1.json', 'r', encoding='utf-8')
+    dannie = json.load(file)
+    spisokdata = []
+    for i in range(len(dannie)):
+        if ddd == dannie[i]['date']:
+            spisokdata.append(dannie[i])
+    print(spisokdata)
+    text1 = ''
+    for i in range(len(spisokdata)):
+        text1 += '*название цеха*: ' + str(spisokdata[i]['cex']) + '\n'
+        text1 += '*№ датчика*: ' + str(spisokdata[i]['datchik']) + '\n'
+        text1 += '*дата*: ' + str(spisokdata[i]['date']) + '\n'
+        text1 += '*Температура воды*: ' + str(spisokdata[i]['znachenie']) + '\n'
+        if spisokdata[i]['znachenie'] > 99:
+            text1 += '\n*!!!Аномальные показатели на датчике!!!*\n'
+    bot.send_message(message.from_user.id, text = text1, parse_mode='Markdown')
+
+
+    file.close()
+
+
 #Первый датчик ЦЕХ 1
 file = open('datchik1.1.json', 'w+', encoding='utf-8')
 today = date.today()
@@ -84,12 +105,12 @@ datchik1 = [{
     "date": str(week7),
     "znachenie": 42
 },
-{
-    "cex": "цех химического улавливания",
-    "datchik": 1.1,
-    "date": str(ddd),
-    "znachenie": 77
-}
+# {
+#     "cex": "цех химического улавливания",
+#     "datchik": 1.1,
+#     "date": str(ddd),
+#     "znachenie": 77
+# }
 ]
 json.dump(datchik1, file, ensure_ascii=False)
 file.close()
@@ -327,6 +348,23 @@ def callback_worker(call):
         bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
         today = date.today()
         print("Today date is: ", today)
+
+    if ddd == str(today):
+        datchik_today.append(pokazanie)
+
+        text = '*Результаты пeрвого датчика за сегодня*\n\n'
+        for i in range(len(datchik_today)):
+            text += '*название цеха*: ' + str(datchik_today[i]['cex']) + '\n'
+            text += '*№ датчика*: ' + str(datchik_today[i]['datchik']) + '\n'
+            text += '*дата*: ' + str(datchik_today[i]['date']) + '\n'
+            text += '*Температура воды*: ' + str(datchik_today[i]['znachenie']) + '\n'
+            if data[i]['znachenie'] > 99:
+                text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+        today = date.today()
+        print("Today date is: ", today)
+
+
     elif call.data == 'показания вчера':
         file = open('datchik1.1.json', 'r', encoding='utf-8')
         data = json.load(file)
