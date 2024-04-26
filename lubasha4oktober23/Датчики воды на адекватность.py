@@ -116,12 +116,69 @@ json.dump(datchik1, file, ensure_ascii=False)
 file.close()
 #Второй датчик ЦЕХ 1
 file = open('datchik2.1.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik2 = [{
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": "2024-02-28",
-    "znachenie": 25
-  }]
+    "date": str(today2),
+    "znachenie": 11
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(yesterday2),
+    "znachenie": 76
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week2),
+    "znachenie": 96
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week22),
+    "znachenie": 34
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week32),
+    "znachenie": 42
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week42),
+    "znachenie": 71
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week52),
+    "znachenie": 21
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week62),
+    "znachenie": 65
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week72),
+    "znachenie": 33
+},
+]
 json.dump(datchik2, file, ensure_ascii=False)
 file.close()
 #Третий датчик ЦЕХ 1
@@ -129,7 +186,7 @@ file = open('datchik3.1.json', 'w+', encoding='utf-8')
 datchik3 = [{
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": "2024-02-28",
+    "date": str(today2),
     "znachenie": 28
   }]
 json.dump(datchik3, file, ensure_ascii=False)
@@ -139,7 +196,7 @@ file = open('datchik4.1.json', 'w+', encoding='utf-8')
 datchik4 = [{
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": "2024-02-28",
+    "date":  str(today2),
     "znachenie": 17
   }]
 json.dump(datchik4, file, ensure_ascii=False)
@@ -163,7 +220,7 @@ file = open('datchik1.2.json', 'w+', encoding='utf-8')
 datchik1 = [{
     "cex": "смолоперерабатывающий цех",
     "datchik": 1.2,
-    "date": "2024-02-28",
+    "date":  str(today2),
     "znachenie": 45
 }]
 json.dump(datchik1, file, ensure_ascii=False)
@@ -173,7 +230,7 @@ file = open('datchik2.2.json', 'w+', encoding='utf-8')
 datchik2 = [{
     "cex": "смолоперерабатывающий цех",
     "datchik": 2.2,
-    "date": "2024-02-28",
+    "date":  str(today2),
     "znachenie": 33
   }]
 json.dump(datchik2, file, ensure_ascii=False)
@@ -183,7 +240,7 @@ file = open('datchik3.2.json', 'w+', encoding='utf-8')
 datchik3 = [{
     "cex": "смолоперерабатывающий цех",
     "datchik": 3.2,
-    "date": "2024-02-28",
+    "date":  str(today2),
     "znachenie": 177
   }]
 json.dump(datchik3, file, ensure_ascii=False)
@@ -193,7 +250,7 @@ file = open('datchik4.2.json', 'w+', encoding='utf-8')
 datchik4 = [{
     "cex": "смолоперерабатывающий цех",
     "datchik": 4.2,
-    "date": "2024-02-28",
+    "date":  str(today2),
     "znachenie": 21
   }]
 json.dump(datchik4, file, ensure_ascii=False)
@@ -217,7 +274,7 @@ file = open('datchik1.3.json', 'w+', encoding='utf-8')
 datchik1 = [{
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": "2024-02-28",
+    "date": str(today2),
     "znachenie": 14
 }]
 json.dump(datchik1, file, ensure_ascii=False)
@@ -227,7 +284,7 @@ file = open('datchik2.3.json', 'w+', encoding='utf-8')
 datchik2 = [{
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": "2024-02-28",
+    "date": str(today2),
     "znachenie": 74
   }]
 json.dump(datchik2, file, ensure_ascii=False)
@@ -237,7 +294,7 @@ file = open('datchik3.3.json', 'w+', encoding='utf-8')
 datchik3 = [{
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": "2024-02-28",
+    "date": str(today2),
     "znachenie": 22
   }]
 json.dump(datchik3, file, ensure_ascii=False)
@@ -247,7 +304,7 @@ file = open('datchik4.3.json', 'w+', encoding='utf-8')
 datchik4 = [{
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": "2024-02-28",
+    "date": str(today2),
     "znachenie": 82
   }]
 json.dump(datchik4, file, ensure_ascii=False)
@@ -259,6 +316,8 @@ import telebot
 from telebot import types
 
 token = '6644060607:AAGkixM7ItktRc2ZJLjOhXZsuOKnuji6vlc'
+
+active_datchik = 0
 
  # def get_date(message):
  #     print(message.text)
@@ -293,7 +352,7 @@ def get_message(message):
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback_worker(call):
-    global today
+    global today, active_datchik
 
     file = open('cex1.json', 'r+', encoding='utf-8')
     products = json.load(file)
@@ -317,6 +376,7 @@ def callback_worker(call):
                          text='Выберите один из датчиков', reply_markup=keyboard)
     # text = 'у датчика' + str(products['datchik']) + 'Недопустимые значения\n\n'
     if call.data == 'Датчик 1.1':
+        active_datchik = call.data
         bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
         keyboard = types.InlineKeyboardMarkup()
         button11 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
@@ -328,8 +388,65 @@ def callback_worker(call):
         button44 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
         keyboard.add(button44)
         bot.send_message(call.from_user.id, text='выберите период прсмора показаний',reply_markup=keyboard)
+
     if call.data == 'показания сегодня':
-        file = open('datchik1.1.json', 'r', encoding='utf-8')
+        file_name = ''
+        if active_datchik == 'Датчик 1.1':
+            file_name = 'datchik1.1.json'
+        elif active_datchik == 'Датчик 2.1':
+            file_name = 'datchik2.1.json'
+        elif active_datchik == 'Датчик 3.1':
+            file_name = 'datchik3.1.json'
+        elif active_datchik == 'Датчик 4.1':
+            file_name = 'datchik4.1.json'
+        elif active_datchik == 'Датчик 1.2':
+            file_name = 'datchik1.2.json'
+        elif active_datchik == 'Датчик 2.2':
+            file_name = 'datchik2.2.json'
+        elif active_datchik == 'Датчик 3.2':
+            file_name = 'datchik3.2.json'
+        elif active_datchik == 'Датчик 4.2':
+            file_name = 'datchik4.2.json'
+        elif active_datchik == 'Датчик 1.3':
+            file_name = 'datchik1.3.json'
+        elif active_datchik == 'Датчик 2.3':
+            file_name = 'datchik2.3.json'
+        elif active_datchik == 'Датчик 3.3':
+            file_name = 'datchik3.3.json'
+        elif active_datchik == 'Датчик 4.3':
+            file_name = 'datchik4.3.json'
+
+
+        if call.data == 'показания вчера':
+            file_name = ''
+            if active_datchik == 'Датчик 1.1':
+                file_name = 'datchik1.1.json'
+            elif active_datchik == 'Датчик 2.1':
+                file_name = 'datchik2.1.json'
+            elif active_datchik == 'Датчик 3.1':
+                file_name = 'datchik3.1.json'
+            elif active_datchik == 'Датчик 4.1':
+                file_name = 'datchik4.1.json'
+            elif active_datchik == 'Датчик 1.2':
+                file_name = 'datchik1.2.json'
+            elif active_datchik == 'Датчик 2.2':
+                file_name = 'datchik2.2.json'
+            elif active_datchik == 'Датчик 3.2':
+                file_name = 'datchik3.2.json'
+            elif active_datchik == 'Датчик 4.2':
+                file_name = 'datchik4.2.json'
+            elif active_datchik == 'Датчик 1.3':
+                file_name = 'datchik1.3.json'
+            elif active_datchik == 'Датчик 2.3':
+                file_name = 'datchik2.3.json'
+            elif active_datchik == 'Датчик 3.3':
+                file_name = 'datchik3.3.json'
+            elif active_datchik == 'Датчик 4.3':
+                file_name = 'datchik4.3.json'
+
+
+        print(file_name)
+        file = open(file_name, 'r', encoding='utf-8')
         data = json.load(file)
         file.close()
         datchik_today = []
@@ -337,7 +454,7 @@ def callback_worker(call):
             if pokazanie['date'] == str(today):
                 datchik_today.append(pokazanie)
 
-        text = '*Результаты пeрвого датчика за сегодня*\n\n'
+        text = '*Результаты  датчика за сегодня*\n\n'
         for i in range(len(datchik_today)):
             text += '*название цеха*: ' + str(datchik_today[i]['cex']) + '\n'
             text += '*№ датчика*: ' + str(datchik_today[i]['datchik']) + '\n'
@@ -422,50 +539,182 @@ def callback_worker(call):
         # znach.append(messages.to_dict())
 
     if call.data == 'Датчик 2.1':
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button111 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button111)
+        button222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button222)
+        button333 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button333)
+        button444 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button444)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik2.1.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today2 = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today2):
+                    datchik_today2.append(pokazanie)
+
+        if ddd == str(today2):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты второго датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
+##########################################################################################################################################################################
+    elif call.data == 'показания вчера':
         file = open('datchik2.1.json', 'r', encoding='utf-8')
         data = json.load(file)
         file.close()
-        text = '*Результаты второго датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
+        datchik_yesterday = []
+        for pokazanie in data:
+            if pokazanie['date'] == str(yesterday):
+                datchik_yesterday.append(pokazanie)
+        print(datchik_yesterday)
+        text = '*Результаты второго датчика за вчера*\n\n'
+        for i in range(len(datchik_yesterday)):
+            text += '*название цеха*: ' + str(datchik_yesterday[i]['cex']) + '\n'
+            text += '*№ датчика*: ' + str(datchik_yesterday[i]['datchik']) + '\n'
+            text += '*дата*: ' + str(datchik_yesterday[i]['date']) + '\n'
+            text += '*Температура воды*: ' + str(datchik_yesterday[i]['znachenie']) + '\n'
             if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
+                text += '\n*!!!Аномальные показатели на датчике!!!*\n'
         bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
-
+        today = date.today()
+        print("Yesterday date is: ", yesterday)
 
     if call.data == 'Датчик 3.1':
-        file = open('datchik3.1.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты третьего датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button111 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button111)
+        button222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button222)
+        button333 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button333)
+        button444 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button444)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik3.1.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты третьего датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
+
+        elif call.data == 'показания вчера':
+            file = open('datchik3.1.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_yesterday = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(yesterday):
+                    datchik_yesterday.append(pokazanie)
+            print(datchik_yesterday)
+            text = '*Результаты третьего датчика за вчера*\n\n'
+            for i in range(len(datchik_yesterday)):
+                text += '*название цеха*: ' + str(datchik_yesterday[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_yesterday[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_yesterday[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_yesterday[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Yesterday date is: ", yesterday)
 
     if call.data == 'Датчик 4.1':
-        file = open('datchik4.1.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты четвертого датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button1111 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button1111)
+        button2222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button2222)
+        button3333 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button3333)
+        button4444 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button4444)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik4.1.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты четвертого датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
+
+        elif call.data == 'показания вчера':
+            file = open('datchik4.1.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_yesterday = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(yesterday):
+                    datchik_yesterday.append(pokazanie)
+            print(datchik_yesterday)
+            text = '*Результаты четвертогор датчика за вчера*\n\n'
+            for i in range(len(datchik_yesterday)):
+                text += '*название цеха*: ' + str(datchik_yesterday[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_yesterday[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_yesterday[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_yesterday[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Yesterday date is: ", yesterday)
 
     if call.data == 'смолоперерабатывающий цех':
         bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
@@ -485,66 +734,157 @@ def callback_worker(call):
                          text='Выберите один из датчиков', reply_markup=keyboard)
     # text = 'у датчика' + str(products['datchik']) + 'Недопустимые значения\n\n'
     if call.data == 'Датчик 1.2':
-        file = open('datchik1.2.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты пeрвого датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik1.2.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
 
-        print(products)
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты первого датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
     #
     if call.data == 'Датчик 2.2':
-        file = open('datchik2.2.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты второго датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik2.2.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты второго датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
 
 
     elif call.data == 'Датчик 3.2':
-        file = open('datchik3.2.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты третьего датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik3.2.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты третьего датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
 
     if call.data == 'Датчик 4.2':
-        file = open('datchik4.2.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты четвертого датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik4.2.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты четвертого датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
 
 
     if call.data == 'углеподготовительный цех':
@@ -565,66 +905,156 @@ def callback_worker(call):
                          text='Выберите один из датчиков', reply_markup=keyboard)
     # text = 'у датчика' + str(products['datchik']) + 'Недопустимые значения\n\n'
     if call.data == 'Датчик 1.3':
-        file = open('datchik1.3.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты пeрвого датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik1.3.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
 
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
 
-        print(products)
+            text = '*Результаты первого датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
 #
     if call.data == 'Датчик 2.3':
-        file = open('datchik2.3.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты второго датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik2.3.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты второго датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
 
 
     if call.data == 'Датчик 3.3':
-        file = open('datchik3.3.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты третьего датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik3.3.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты третьего датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
 
     if call.data == 'Датчик 4.3':
-        file = open('datchik4.3.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        text = '*Результаты четвертого датчика*\n\n'
-        for i in range(len(data)):
-            text += '*название цеха*: ' + str(data[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(data[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(data[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(data[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        print(products)
+        active_datchik = call.data
+        bot.send_message(call.from_user.id, text='Вы нажали на кнопку - ' + call.data)
+        keyboard = types.InlineKeyboardMarkup()
+        button12 = types.InlineKeyboardButton(text='показания сегодня', callback_data='показания сегодня')
+        keyboard.add(button12)
+        button22222 = types.InlineKeyboardButton(text='показания вчера', callback_data='показания вчера')
+        keyboard.add(button22222)
+        button32 = types.InlineKeyboardButton(text='показания недели', callback_data='показания недели')
+        keyboard.add(button32)
+        button442 = types.InlineKeyboardButton(text='выбрать свою дату', callback_data='выбрать свою дату')
+        keyboard.add(button442)
+        bot.send_message(call.from_user.id, text='выберите период прсмора показаний', reply_markup=keyboard)
+        ###############################################################################################################################################################
+        if call.data == 'показания сегодня':
+            file = open('datchik4.3.json', 'r', encoding='utf-8')
+            data = json.load(file)
+            file.close()
+            datchik_today = []
+            for pokazanie in data:
+                if pokazanie['date'] == str(today):
+                    datchik_today.append(pokazanie)
+
+        if ddd == str(today):
+            datchik_today2.append(pokazanie)
+
+            text = '*Результаты четвертого датчика за сегодня*\n\n'
+            for i in range(len(datchik_today2)):
+                text += '*название цеха*: ' + str(datchik_today2[i]['cex']) + '\n'
+                text += '*№ датчика*: ' + str(datchik_today2[i]['datchik']) + '\n'
+                text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
+                text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
+                if data[i]['znachenie'] > 99:
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+            bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
+            today = date.today()
+            print("Today date is: ", today)
 
 bot.polling(none_stop=True)
