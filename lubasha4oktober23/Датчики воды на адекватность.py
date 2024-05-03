@@ -183,130 +183,682 @@ json.dump(datchik2, file, ensure_ascii=False)
 file.close()
 #Третий датчик ЦЕХ 1
 file = open('datchik3.1.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik3 = [{
     "cex": "цех химического улавливания",
     "datchik": 3.1,
     "date": str(today2),
-    "znachenie": 28
-  }]
+    "znachenie": 23
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 3.1,
+    "date": str(yesterday2),
+    "znachenie": 84
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 3.1,
+    "date": str(week2),
+    "znachenie": 34
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 3.1,
+    "date": str(week22),
+    "znachenie": 56
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 2.1,
+    "date": str(week32),
+    "znachenie": 21
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 3.1,
+    "date": str(week42),
+    "znachenie": 98
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 3.1,
+    "date": str(week52),
+    "znachenie": 123
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 3.1,
+    "date": str(week62),
+    "znachenie": 45
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 3.1,
+    "date": str(week72),
+    "znachenie": 99
+},
+]
 json.dump(datchik3, file, ensure_ascii=False)
 file.close()
-#Четвертый датчик ЦЕХ 1
+
+# четвертый датчик цех 1
 file = open('datchik4.1.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik4 = [{
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date":  str(today2),
-    "znachenie": 17
-  }]
+    "date": str(today2),
+    "znachenie": 66
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(yesterday2),
+    "znachenie": 54
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(week2),
+    "znachenie": 12
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(week22),
+    "znachenie": 92
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(week32),
+    "znachenie": 45
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(week42),
+    "znachenie": 27
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(week52),
+    "znachenie": 555
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(week62),
+    "znachenie": 61
+},
+{
+    "cex": "цех химического улавливания",
+    "datchik": 4.1,
+    "date": str(week72),
+    "znachenie": 73
+},
+]
 json.dump(datchik4, file, ensure_ascii=False)
-file.close()
-
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-import json
-file = open('cex2.json', 'w+', encoding='utf-8')
-cex2 = {
-    "cex": "смолоперерабатывающий цех",
-    "datchik1": 1.2,
-    "datchik2": 2.2,
-    "datchik3": 3.2,
-    "datchik4": 4.2
-}
-json.dump(cex2, file, ensure_ascii=False)
 file.close()
 
 #Первый датчик ЦЕХ 2
 file = open('datchik1.2.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik1 = [{
-    "cex": "смолоперерабатывающий цех",
+    "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date":  str(today2),
-    "znachenie": 45
-}]
+    "date": str(today2),
+    "znachenie": 76
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(yesterday2),
+    "znachenie": 234
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(week2),
+    "znachenie": 39
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(week22),
+    "znachenie": 21
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(week32),
+    "znachenie": 74
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(week42),
+    "znachenie": 52
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(week52),
+    "znachenie": 23
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(week62),
+    "znachenie": 78
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.2,
+    "date": str(week72),
+    "znachenie": 51
+},
+]
 json.dump(datchik1, file, ensure_ascii=False)
 file.close()
-#Второй датчик ЦЕХ 2
+
+#второй датчик ЦЕХ 2
 file = open('datchik2.2.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik2 = [{
-    "cex": "смолоперерабатывающий цех",
+    "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date":  str(today2),
-    "znachenie": 33
-  }]
+    "date": str(today2),
+    "znachenie": 97
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(yesterday2),
+    "znachenie": 52
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(week2),
+    "znachenie": 77
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(week22),
+    "znachenie": 67
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(week32),
+    "znachenie": 68
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(week42),
+    "znachenie": 65
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(week52),
+    "znachenie": 22
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(week62),
+    "znachenie": 15
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.2,
+    "date": str(week72),
+    "znachenie": 41
+},
+]
 json.dump(datchik2, file, ensure_ascii=False)
 file.close()
-#Третий датчик ЦЕХ 2
+
+#третий датчик ЦЕХ 2
 file = open('datchik3.2.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik3 = [{
-    "cex": "смолоперерабатывающий цех",
+    "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date":  str(today2),
-    "znachenie": 177
-  }]
+    "date": str(today2),
+    "znachenie": 999
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(yesterday2),
+    "znachenie": 54
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(week2),
+    "znachenie": 26
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(week22),
+    "znachenie": 93
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(week32),
+    "znachenie": 54
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(week42),
+    "znachenie": 25
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(week52),
+    "znachenie": 76
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(week62),
+    "znachenie": 22
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.2,
+    "date": str(week72),
+    "znachenie": 90
+},
+]
 json.dump(datchik3, file, ensure_ascii=False)
 file.close()
+
 #Четвертый датчик ЦЕХ 2
 file = open('datchik4.2.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik4 = [{
-    "cex": "смолоперерабатывающий цех",
+    "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date":  str(today2),
+    "date": str(today2),
+    "znachenie": 76
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(yesterday2),
+    "znachenie": 234
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(week2),
+    "znachenie": 39
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(week22),
     "znachenie": 21
-  }]
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(week32),
+    "znachenie": 74
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(week42),
+    "znachenie": 52
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(week52),
+    "znachenie": 23
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(week62),
+    "znachenie": 78
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.2,
+    "date": str(week72),
+    "znachenie": 51
+},
+]
+print(1234)
 json.dump(datchik4, file, ensure_ascii=False)
 file.close()
 
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-import json
-file = open('cex3.json', 'w+', encoding='utf-8')
-cex2 = {
-    "cex": "углеподготовительный цех",
-    "datchik1": 1.3,
-    "datchik2": 2.3,
-    "datchik3": 3.3,
-    "datchik4": 4.3
-}
-json.dump(cex2, file, ensure_ascii=False)
-file.close()
-
-#Первый датчик ЦЕХ 3
+#первый длатчик ЦЕХ 3
 file = open('datchik1.3.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik1 = [{
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
     "date": str(today2),
-    "znachenie": 14
-}]
+    "znachenie": 30
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 1.3,
+    "date": str(yesterday2),
+    "znachenie": 59
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 1.3,
+    "date": str(week2),
+    "znachenie": 44
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 1.3,
+    "date": str(week22),
+    "znachenie": 91
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 1.3,
+    "date": str(week32),
+    "znachenie": 83
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 1.3,
+    "date": str(week42),
+    "znachenie": 109
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 1.3,
+    "date": str(week52),
+    "znachenie": 51
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 1.3,
+    "date": str(week62),
+    "znachenie": 18
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 1.3,
+    "date": str(week72),
+    "znachenie": 101
+},
+]
 json.dump(datchik1, file, ensure_ascii=False)
 file.close()
-#Второй датчик ЦЕХ 3
+
+#второй датчик ЦЕХ 3
 file = open('datchik2.3.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik2 = [{
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
     "date": str(today2),
-    "znachenie": 74
-  }]
+    "znachenie": 7
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 2.3,
+    "date": str(yesterday2),
+    "znachenie": 41
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 2.3,
+    "date": str(week2),
+    "znachenie": 51
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 2.3,
+    "date": str(week22),
+    "znachenie": 87
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 2.3,
+    "date": str(week32),
+    "znachenie": 15
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 2.3,
+    "date": str(week42),
+    "znachenie": 55
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 2.3,
+    "date": str(week52),
+    "znachenie": 80
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 2.3,
+    "date": str(week62),
+    "znachenie": 52
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 2.3,
+    "date": str(week72),
+    "znachenie": 17
+},
+]
 json.dump(datchik2, file, ensure_ascii=False)
 file.close()
-#Третий датчик ЦЕХ 3
+
+# Третий датчик ЦЕХ 3
 file = open('datchik3.3.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik3 = [{
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
     "date": str(today2),
-    "znachenie": 22
-  }]
+    "znachenie": 109
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 3.3,
+    "date": str(yesterday2),
+    "znachenie": 5
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 3.3,
+    "date": str(week2),
+    "znachenie": 20
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 3.3,
+    "date": str(week22),
+    "znachenie": 73
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 3.3,
+    "date": str(week32),
+    "znachenie": 72
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 3.3,
+    "date": str(week42),
+    "znachenie": 54
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 3.3,
+    "date": str(week52),
+    "znachenie": 48
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 3.3,
+    "date": str(week62),
+    "znachenie": 82
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 3.3,
+    "date": str(week72),
+    "znachenie": 45
+},
+]
 json.dump(datchik3, file, ensure_ascii=False)
 file.close()
+
 #Четвертый датчик ЦЕХ 3
 file = open('datchik4.3.json', 'w+', encoding='utf-8')
+today2 = date.today()
+yesterday2 =  today - timedelta(days = 1)
+week22 = (today - timedelta(days = 6))
+week32 = (today - timedelta(days = 5))
+week42 = (today - timedelta(days = 4))
+week52 = (today - timedelta(days = 3))
+week62 = (today - timedelta(days = 2))
+week72 = (today - timedelta(days = 1))
 datchik4 = [{
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
     "date": str(today2),
-    "znachenie": 82
-  }]
+    "znachenie": 19
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 4.3,
+    "date": str(yesterday2),
+    "znachenie": 67
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 4.3,
+    "date": str(week2),
+    "znachenie": 93
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 4.3,
+    "date": str(week22),
+    "znachenie": 44
+},
+{
+    "cex": "смолеперерабатывающий цех",
+    "datchik": 4.3,
+    "date": str(week32),
+    "znachenie": 98
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 4.3,
+    "date": str(week42),
+    "znachenie": 66
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 4.3,
+    "date": str(week52),
+    "znachenie": 34
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 4.3,
+    "date": str(week62),
+    "znachenie": 2
+},
+{
+    "cex": "углеподготовительный цех",
+    "datchik": 4.3,
+    "date": str(week72),
+    "znachenie": 10
+},
+]
 json.dump(datchik4, file, ensure_ascii=False)
 file.close()
 
@@ -416,35 +968,6 @@ def callback_worker(call):
         elif active_datchik == 'Датчик 4.3':
             file_name = 'datchik4.3.json'
 
-
-        if call.data == 'показания вчера':
-            file_name = ''
-            if active_datchik == 'Датчик 1.1':
-                file_name = 'datchik1.1.json'
-            elif active_datchik == 'Датчик 2.1':
-                file_name = 'datchik2.1.json'
-            elif active_datchik == 'Датчик 3.1':
-                file_name = 'datchik3.1.json'
-            elif active_datchik == 'Датчик 4.1':
-                file_name = 'datchik4.1.json'
-            elif active_datchik == 'Датчик 1.2':
-                file_name = 'datchik1.2.json'
-            elif active_datchik == 'Датчик 2.2':
-                file_name = 'datchik2.2.json'
-            elif active_datchik == 'Датчик 3.2':
-                file_name = 'datchik3.2.json'
-            elif active_datchik == 'Датчик 4.2':
-                file_name = 'datchik4.2.json'
-            elif active_datchik == 'Датчик 1.3':
-                file_name = 'datchik1.3.json'
-            elif active_datchik == 'Датчик 2.3':
-                file_name = 'datchik2.3.json'
-            elif active_datchik == 'Датчик 3.3':
-                file_name = 'datchik3.3.json'
-            elif active_datchik == 'Датчик 4.3':
-                file_name = 'datchik4.3.json'
-
-
         print(file_name)
         file = open(file_name, 'r', encoding='utf-8')
         data = json.load(file)
@@ -481,9 +1004,35 @@ def callback_worker(call):
         today = date.today()
         print("Today date is: ", today)
 
-
     elif call.data == 'показания вчера':
-        file = open('datchik1.1.json', 'r', encoding='utf-8')
+        file_name = ''
+        if active_datchik == 'Датчик 1.1':
+            file_name = 'datchik1.1.json'
+        elif active_datchik == 'Датчик 2.1':
+            file_name = 'datchik2.1.json'
+        elif active_datchik == 'Датчик 3.1':
+            file_name = 'datchik3.1.json'
+        elif active_datchik == 'Датчик 4.1':
+            file_name = 'datchik4.1.json'
+        elif active_datchik == 'Датчик 1.2':
+            file_name = 'datchik1.2.json'
+        elif active_datchik == 'Датчик 2.2':
+            file_name = 'datchik2.2.json'
+        elif active_datchik == 'Датчик 3.2':
+            file_name = 'datchik3.2.json'
+        elif active_datchik == 'Датчик 4.2':
+            file_name = 'datchik4.2.json'
+        elif active_datchik == 'Датчик 1.3':
+            file_name = 'datchik1.3.json'
+        elif active_datchik == 'Датчик 2.3':
+            file_name = 'datchik2.3.json'
+        elif active_datchik == 'Датчик 3.3':
+            file_name = 'datchik3.3.json'
+        elif active_datchik == 'Датчик 4.3':
+            file_name = 'datchik4.3.json'
+
+        print(file_name)
+        file = open(file_name, 'r', encoding='utf-8')
         data = json.load(file)
         file.close()
         datchik_yesterday = []
@@ -491,7 +1040,7 @@ def callback_worker(call):
             if pokazanie['date'] == str(yesterday):
                 datchik_yesterday.append(pokazanie)
         print(datchik_yesterday)
-        text = '*Результаты пeрвого датчика за вчера*\n\n'
+        text = '*Результаты датчика за вчера*\n\n'
         for i in range(len(datchik_yesterday)):
             text += '*название цеха*: ' + str(datchik_yesterday[i]['cex']) + '\n'
             text += '*№ датчика*: ' + str(datchik_yesterday[i]['datchik']) + '\n'
@@ -576,26 +1125,6 @@ def callback_worker(call):
             today = date.today()
             print("Today date is: ", today)
 ##########################################################################################################################################################################
-    elif call.data == 'показания вчера':
-        file = open('datchik2.1.json', 'r', encoding='utf-8')
-        data = json.load(file)
-        file.close()
-        datchik_yesterday = []
-        for pokazanie in data:
-            if pokazanie['date'] == str(yesterday):
-                datchik_yesterday.append(pokazanie)
-        print(datchik_yesterday)
-        text = '*Результаты второго датчика за вчера*\n\n'
-        for i in range(len(datchik_yesterday)):
-            text += '*название цеха*: ' + str(datchik_yesterday[i]['cex']) + '\n'
-            text += '*№ датчика*: ' + str(datchik_yesterday[i]['datchik']) + '\n'
-            text += '*дата*: ' + str(datchik_yesterday[i]['date']) + '\n'
-            text += '*Температура воды*: ' + str(datchik_yesterday[i]['znachenie']) + '\n'
-            if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*\n'
-        bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        today = date.today()
-        print("Yesterday date is: ", yesterday)
 
     if call.data == 'Датчик 3.1':
         active_datchik = call.data
