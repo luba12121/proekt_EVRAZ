@@ -1051,8 +1051,34 @@ def callback_worker(call):
         bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
         today = date.today()
         print("Yesterday date is: ", yesterday)
-
     elif call.data == 'показания недели':
+        file_name = ''
+        if active_datchik == 'Датчик 1.1':
+            file_name = 'datchik1.1.json'
+        elif active_datchik == 'Датчик 2.1':
+            file_name = 'datchik2.1.json'
+        elif active_datchik == 'Датчик 3.1':
+            file_name = 'datchik3.1.json'
+        elif active_datchik == 'Датчик 4.1':
+            file_name = 'datchik4.1.json'
+        elif active_datchik == 'Датчик 1.2':
+            file_name = 'datchik1.2.json'
+        elif active_datchik == 'Датчик 2.2':
+            file_name = 'datchik2.2.json'
+        elif active_datchik == 'Датчик 3.2':
+            file_name = 'datchik3.2.json'
+        elif active_datchik == 'Датчик 4.2':
+            file_name = 'datchik4.2.json'
+        elif active_datchik == 'Датчик 1.3':
+            file_name = 'datchik1.3.json'
+        elif active_datchik == 'Датчик 2.3':
+            file_name = 'datchik2.3.json'
+        elif active_datchik == 'Датчик 3.3':
+            file_name = 'datchik3.3.json'
+        elif active_datchik == 'Датчик 4.3':
+            file_name = 'datchik4.3.json'
+
+
         file = open('datchik1.1.json', 'r', encoding='utf-8')
         data = json.load(file)
         file.close()
