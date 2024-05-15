@@ -891,12 +891,16 @@ import telebot
 from telebot import types
 
 token = '6644060607:AAGkixM7ItktRc2ZJLjOhXZsuOKnuji6vlc'
+# БОТ АДМИНИСТРАТОР - если температура > 100, то оправляет сообщение о предупреждении и вроде все
+
+# import telebot
+# from telebot import types
+#
+# token2 = '6909925991:AAEi24htnDOZeUWEoZxQOXHTh_9RHEz8fk8'
+
 
 active_datchik = 0
 
- # def get_date(message):
- #     print(message.text)
- #     poldata = str(message.text)
 
 bot = telebot.TeleBot(token)
 @bot.message_handler(content_types=['text'])
