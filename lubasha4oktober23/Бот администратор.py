@@ -7,40 +7,53 @@ bot = telebot.TeleBot(token2)
 
 dannie_fio = []
 
-def sozdanie_soobshenia(message):
-    message = []
+# def sozdanie_soobshenia(message):
+#     message = []
 
 
 
 def get_employee(message):
+    print('get_employee')
     global dannie_fio
-    print(message.text)
     dannie_fio.append(message.text)
     bot.send_message(message.chat.id, text='Данные записаны', parse_mode='Markdown')
     textpol2 = 'Укажите телеграмм сотрудника'
     bot.send_message(message.chat.id, text=textpol2, parse_mode='Markdown')
     bot.register_next_step_handler(message, get_save)
 
+
 def get_save(message):
+    print('get_save')
     global dannie_fio
     # global message
-    file = open('dannie_sotrudnika.json', 'w+', encoding='utf-8')
+
+    with open ('./dannie_sotrudnika.json', 'w+', encoding='utf-8') as file:
+#     old = file.readlines()
+# print('old')
+# print(old)
+#
+#     file = open('dannie_sotrudnika.json', 'w+', encoding='utf-8')
     dannie_sotrudnika= {
         "name": dannie_fio[0],
         "tg": message.text
     }
     json.dump(dannie_sotrudnika, file, ensure_ascii=False)
     file.close()
+    dannie_fio.append(message.text)
     bot.send_message(message.chat.id, text='Данные записаны', parse_mode='Markdown')
-    tekst = 'Хотите добавить еще одного сотрудника?'
-    bot.send_message(message.chat.id, text=tekst, parse_mode='Markdown')
-    # bot.register_next_step_handler(message, sozdanie_soobshenia)
-    if tekst == 'да':
 
+    keyboard = types.InlineKeyboardMarkup()
+    button10 = types.InlineKeyboardButton(text='Да', callback_data='Да')
+    keyboard.add(button10)
+    button20 = types.InlineKeyboardButton(text='Нет', callback_data='Нет')
+    keyboard.add(button20)
+    bot.send_message(message.from_user.id, text = 'Хотите добавить еще одного сотрудника?', reply_markup=keyboard)
 
 
 @bot.message_handler(content_types=['text'])
 def get_message(message):
+    print('message')
+    print(message)
     if message.text == '/start':
         bot.set_my_commands(
             commands=[
@@ -62,7 +75,7 @@ def get_message(message):
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback_worker(call):
-
+    print(call)
     if call.data == 'Посмотреть сотрудников':
         file1 = open('dannie_sotrudnika.json', 'r+', encoding='utf-8')
         workers = json.load(file1)
@@ -73,6 +86,11 @@ def callback_worker(call):
             textpol = ('Укажите ФИО сотрудника')
             bot.send_message(call.from_user.id, text=textpol, parse_mode='Markdown')
             bot.register_next_step_handler(call.message, get_employee)
+    elif call.data == 'Да':
+        bot.send_message(call.from_user.id, text='Укажите ФИО сотрудника', parse_mode='Markdown')
+        bot.register_next_step_handler(call.message, get_employee)
+    elif call.data == 'Нет':
+            bot.send_message(call.from_user.id, text='Указанные ранеее сотрудники успешно добавлены!',parse_mode='Markdown')
 
 
 
