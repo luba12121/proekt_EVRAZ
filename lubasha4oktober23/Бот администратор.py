@@ -6,41 +6,34 @@ token2 = '6909925991:AAEi24htnDOZeUWEoZxQOXHTh_9RHEz8fk8'
 bot = telebot.TeleBot(token2)
 
 dannie_fio = []
-
-# def sozdanie_soobshenia(message):
-#     message = []
-
-
+dannie_tg = []
 
 def get_employee(message):
-    print('get_employee')
+    # print('get_employee')
     global dannie_fio
     dannie_fio.append(message.text)
-    bot.send_message(message.chat.id, text='Данные записаны', parse_mode='Markdown')
+    bot.send_message(message.chat.id, text='*Данные записаны*', parse_mode='Markdown')
     textpol2 = 'Укажите телеграмм сотрудника'
     bot.send_message(message.chat.id, text=textpol2, parse_mode='Markdown')
     bot.register_next_step_handler(message, get_save)
 
 
 def get_save(message):
-    print('get_save')
+    # print('get_save')
     global dannie_fio
     # global message
+    dannie_tg.append(message.text)
+    bot.send_message(message.chat.id, text='*Данные записаны*', parse_mode='Markdown')
 
-    with open ('./dannie_sotrudnika.json', 'w+', encoding='utf-8') as file:
-#     old = file.readlines()
-# print('old')
-# print(old)
-#
-#     file = open('dannie_sotrudnika.json', 'w+', encoding='utf-8')
+
+    file = open('dannie_sotrudnika.json', 'w+', encoding='utf-8')
     dannie_sotrudnika= {
-        "name": dannie_fio[0],
-        "tg": message.text
-    }
+        "name": dannie_fio,
+        "tg": dannie_tg
+        }
     json.dump(dannie_sotrudnika, file, ensure_ascii=False)
     file.close()
-    dannie_fio.append(message.text)
-    bot.send_message(message.chat.id, text='Данные записаны', parse_mode='Markdown')
+
 
     keyboard = types.InlineKeyboardMarkup()
     button10 = types.InlineKeyboardButton(text='Да', callback_data='Да')
@@ -80,8 +73,12 @@ def callback_worker(call):
         file1 = open('dannie_sotrudnika.json', 'r+', encoding='utf-8')
         workers = json.load(file1)
         print(workers)
-        bot.send_message(call.from_user.id, text = workers['name'] , parse_mode='Markdown')
-        bot.send_message(call.from_user.id, text= workers['tg'], parse_mode='Markdown')
+        text = '*Список сотрудников:*\n\n'
+        for i in range(len(workers['name'])):
+            text += '_Имя сотрудника:_ ' + workers['name'][i] + '\n'
+            text += '_Телеграм сотрудника:_ ' + workers['tg'][i] + '\n\n'
+        bot.send_message(call.from_user.id, text = text, parse_mode='Markdown')
+        # bot.send_message(call.from_user.id, text= workers['tg'], parse_mode='Markdown')
     elif call.data == 'Добавить сотрудника':
             textpol = ('Укажите ФИО сотрудника')
             bot.send_message(call.from_user.id, text=textpol, parse_mode='Markdown')
@@ -90,22 +87,8 @@ def callback_worker(call):
         bot.send_message(call.from_user.id, text='Укажите ФИО сотрудника', parse_mode='Markdown')
         bot.register_next_step_handler(call.message, get_employee)
     elif call.data == 'Нет':
-            bot.send_message(call.from_user.id, text='Указанные ранеее сотрудники успешно добавлены!',parse_mode='Markdown')
+            bot.send_message(call.from_user.id, text='_Указанные ранеее сотрудники успешно добавлены!_',parse_mode='Markdown')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#что бы добавление была бесконечным, и что бы выводилось хотя бы
 
 
 bot.polling(none_stop=True)

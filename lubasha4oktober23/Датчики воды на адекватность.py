@@ -126,7 +126,7 @@ datchik1 = [{
     "cex": "цех химического улавливания",
     "datchik": 1.1,
     "date": str(week7),
-    "znachenie": 42
+    "znachenie": 55
 },
 # {
 #     "cex": "цех химического улавливания",
@@ -150,56 +150,56 @@ week72 = (today - timedelta(days = 1))
 datchik2 = [{
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 11
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 76
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 96
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 34
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 42
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 71
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 21
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 65
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week72),
-    "znachenie": 33
+    "date": str(week7),
+    "znachenie": 76
 },
 ]
 json.dump(datchik2, file, ensure_ascii=False)
@@ -217,56 +217,56 @@ week72 = (today - timedelta(days = 1))
 datchik3 = [{
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 23
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 84
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 34
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 56
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 2.1,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 21
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 98
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 123
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 45
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 3.1,
-    "date": str(week72),
-    "znachenie": 99
+    "date": str(week7),
+    "znachenie": 84
 },
 ]
 json.dump(datchik3, file, ensure_ascii=False)
@@ -285,56 +285,56 @@ week72 = (today - timedelta(days = 1))
 datchik4 = [{
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 66
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 54
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 12
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 92
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 45
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 27
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 555
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 61
 },
 {
     "cex": "цех химического улавливания",
     "datchik": 4.1,
-    "date": str(week72),
-    "znachenie": 73
+    "date": str(week7),
+    "znachenie": 54
 },
 ]
 json.dump(datchik4, file, ensure_ascii=False)
@@ -353,56 +353,56 @@ week72 = (today - timedelta(days = 1))
 datchik1 = [{
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 76
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 234
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 39
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 21
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 74
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 52
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 23
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 78
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 1.2,
-    "date": str(week72),
-    "znachenie": 51
+    "date": str(week7),
+    "znachenie": 234
 },
 ]
 json.dump(datchik1, file, ensure_ascii=False)
@@ -421,56 +421,56 @@ week72 = (today - timedelta(days = 1))
 datchik2 = [{
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 97
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 52
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 77
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 67
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 68
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 65
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 22
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 15
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 2.2,
-    "date": str(week72),
-    "znachenie": 41
+    "date": str(week7),
+    "znachenie": 52
 },
 ]
 json.dump(datchik2, file, ensure_ascii=False)
@@ -489,56 +489,56 @@ week72 = (today - timedelta(days = 1))
 datchik3 = [{
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 999
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 54
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 26
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 93
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 54
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 25
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 76
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 22
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 3.2,
-    "date": str(week72),
-    "znachenie": 90
+    "date": str(week7),
+    "znachenie": 54
 },
 ]
 json.dump(datchik3, file, ensure_ascii=False)
@@ -557,56 +557,56 @@ week72 = (today - timedelta(days = 1))
 datchik4 = [{
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 76
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 234
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 39
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 21
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 74
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 52
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 23
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 78
 },
 {
     "cex": "смолеперерабатывающий цех",
     "datchik": 4.2,
-    "date": str(week72),
-    "znachenie": 51
+    "date": str(week7),
+    "znachenie": 234
 },
 ]
 print(1234)
@@ -626,56 +626,56 @@ week72 = (today - timedelta(days = 1))
 datchik1 = [{
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 30
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 59
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 44
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 91
 },
 {
-    "cex": "смолеперерабатывающий цех",
+    "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 83
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 109
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 51
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 18
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 1.3,
-    "date": str(week72),
-    "znachenie": 101
+    "date": str(week7),
+    "znachenie": 59
 },
 ]
 json.dump(datchik1, file, ensure_ascii=False)
@@ -694,56 +694,56 @@ week72 = (today - timedelta(days = 1))
 datchik2 = [{
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 7
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 41
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 51
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 87
 },
 {
-    "cex": "смолеперерабатывающий цех",
+    "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 15
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 55
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 80
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 52
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 2.3,
-    "date": str(week72),
-    "znachenie": 17
+    "date": str(week7),
+    "znachenie": 41
 },
 ]
 json.dump(datchik2, file, ensure_ascii=False)
@@ -762,56 +762,56 @@ week72 = (today - timedelta(days = 1))
 datchik3 = [{
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 109
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 5
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 20
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 73
 },
 {
-    "cex": "смолеперерабатывающий цех",
+    "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 72
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 54
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 48
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 82
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 3.3,
-    "date": str(week72),
-    "znachenie": 45
+    "date": str(week7),
+    "znachenie": 5
 },
 ]
 json.dump(datchik3, file, ensure_ascii=False)
@@ -830,56 +830,56 @@ week72 = (today - timedelta(days = 1))
 datchik4 = [{
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(today2),
+    "date": str(today),
     "znachenie": 19
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(yesterday2),
+    "date": str(yesterday),
     "znachenie": 67
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(week2),
+    "date": str(week),
     "znachenie": 93
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(week22),
+    "date": str(week2),
     "znachenie": 44
 },
 {
-    "cex": "смолеперерабатывающий цех",
+    "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(week32),
+    "date": str(week3),
     "znachenie": 98
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(week42),
+    "date": str(week4),
     "znachenie": 66
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(week52),
+    "date": str(week5),
     "znachenie": 34
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(week62),
+    "date": str(week6),
     "znachenie": 2
 },
 {
     "cex": "углеподготовительный цех",
     "datchik": 4.3,
-    "date": str(week72),
-    "znachenie": 10
+    "date": str(week7),
+    "znachenie": 67
 },
 ]
 json.dump(datchik4, file, ensure_ascii=False)
@@ -1011,7 +1011,7 @@ def callback_worker(call):
             text += '*дата*: ' + str(datchik_today[i]['date']) + '\n'
             text += '*Температура воды*: ' + str(datchik_today[i]['znachenie']) + '\n'
             if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
         bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
         today = date.today()
         print("Today date is: ", today)
@@ -1026,7 +1026,7 @@ def callback_worker(call):
             text += '*дата*: ' + str(datchik_today[i]['date']) + '\n'
             text += '*Температура воды*: ' + str(datchik_today[i]['znachenie']) + '\n'
             if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
         bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
         today = date.today()
         print("Today date is: ", today)
@@ -1074,7 +1074,7 @@ def callback_worker(call):
             text += '*дата*: ' + str(datchik_yesterday[i]['date']) + '\n'
             text += '*Температура воды*: ' + str(datchik_yesterday[i]['znachenie']) + '\n'
             if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
         bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
         today = date.today()
         print("Yesterday date is: ", yesterday)
@@ -1126,7 +1126,7 @@ def callback_worker(call):
             text += '*дата*: ' + str(datchik_week[i]['date']) + '\n'
             text += '*Температура воды*: ' + str(datchik_week[i]['znachenie']) + '\n'
             if data[i]['znachenie'] > 99:
-                text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
         bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
         today = date.today()
 
@@ -1136,26 +1136,7 @@ def callback_worker(call):
         textpol = '*Напишите дату за которую нужно узнать показания*'
         bot.send_message(call.from_user.id, text=textpol, parse_mode='Markdown')
         bot.register_next_step_handler(call.message, get_date)
-        # znach = []
-        # znach.append(messages.to_dict())
-        # file = open(file_name, 'r', encoding='utf-8')
-        # data = json.load(file)
-        # file.close()
-        # datchik_day_polzovatel = []
-        # for pokazanie in data:
-        #     if pokazanie['date'] == str(textpol):
-        #         datchik_day_polzovatel.append(pokazanie)
-        # print(datchik_day_polzovatel)
-        # text = '*Результаты датчика *\n\n'
-        # for i in range(len(datchik_day_polzovatel)):
-        #     text += '*название цеха*: ' + str(datchik_day_polzovatel[i]['cex']) + '\n'
-        #     text += '*№ датчика*: ' + str(datchik_day_polzovatel[i]['datchik']) + '\n'
-        #     text += '*дата*: ' + str(datchik_day_polzovatel[i]['date']) + '\n'
-        #     text += '*Температура воды*: ' + str(datchik_day_polzovatel[i]['znachenie']) + '\n'
-        #     if data[i]['znachenie'] > 99:
-        #         text += '\n*!!!Аномальные показатели на датчике!!!*\n'
-        # bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
-        # today = date.today()
+
 
 
 
@@ -1192,7 +1173,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1232,7 +1213,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1291,7 +1272,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1367,7 +1348,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1405,7 +1386,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1444,7 +1425,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1482,7 +1463,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1538,7 +1519,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1576,7 +1557,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1615,7 +1596,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
@@ -1653,7 +1634,7 @@ def callback_worker(call):
                 text += '*дата*: ' + str(datchik_today2[i]['date']) + '\n'
                 text += '*Температура воды*: ' + str(datchik_today2[i]['znachenie']) + '\n'
                 if data[i]['znachenie'] > 99:
-                    text += '\n*!!!Аномальные показатели на датчике!!!*\n'
+                    text += '\n*!!!Аномальные показатели на датчике!!!*\n\n'
             bot.send_message(call.from_user.id, text=text, parse_mode='Markdown')
             today = date.today()
             print("Today date is: ", today)
